@@ -18,10 +18,13 @@ class WelcomePage: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var slides:[Onboard1View] = [];
+    var slides:[OnboardView] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         
@@ -31,29 +34,38 @@ class WelcomePage: UIViewController, UIScrollViewDelegate {
     }
     
 
-    func createSlides() -> [Onboard1View] {
+    func createSlides() -> [OnboardView] {
         
         
-        let slide1:Onboard1View = Bundle.main.loadNibNamed("onboard1", owner: self, options: nil)?.first as! Onboard1View
+        let slide1:OnboardView = Bundle.main.loadNibNamed("onboard", owner: self, options: nil)?.first as! OnboardView
         slide1.imageView.image = UIImage(named: "onboard1")
         slide1.labelTitle.text = "Welcome"
+        slide1.button.isHidden = true
+        slide1.bottomView.layer.cornerRadius = 20
+        slide1.bottomView.layer.maskedCorners = [.layerMinXMinYCorner]
         slide1.labelDesc.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "
         
-        let slide2:Onboard1View = Bundle.main.loadNibNamed("onboard1", owner: self, options: nil)?.first as! Onboard1View
+        let slide2:OnboardView = Bundle.main.loadNibNamed("onboard", owner: self, options: nil)?.first as! OnboardView
         slide2.imageView.image = UIImage(named: "onboard2")
         slide2.labelTitle.text = "ASK"
+        slide2.button.isHidden = true
         slide2.labelDesc.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "
         
-        let slide3:Onboard1View = Bundle.main.loadNibNamed("onboard1", owner: self, options: nil)?.first as! Onboard1View
+        let slide3:OnboardView = Bundle.main.loadNibNamed("onboard", owner: self, options: nil)?.first as! OnboardView
         slide3.imageView.image = UIImage(named: "onboard3")
         slide3.labelTitle.text = "HELP"
+        slide3.button.isHidden = false
+        slide3.button.layer.cornerRadius = 3
+        slide3.button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        slide3.bottomView.layer.cornerRadius = 20
+        slide3.bottomView.layer.maskedCorners = [.layerMaxXMinYCorner]
         slide3.labelDesc.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis "
      
         
         return [slide1, slide2, slide3]
     }
     
-    func setupSlideScrollView(slides : [Onboard1View]) {
+    func setupSlideScrollView(slides : [OnboardView]) {
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
         scrollView.isPagingEnabled = true
@@ -113,5 +125,15 @@ class WelcomePage: UIViewController, UIScrollViewDelegate {
         
         // return the fade colour
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
+    }
+    
+    @objc func buttonTapped(sender: UIButton) {
+        
+        print("buttonTapped()")
+        
+//        let navigationController = window?.rootViewController as! UINavigationController
+        let viewController = SignUpLoginController()
+        navigationController?.pushViewController(viewController, animated: true)
+        
     }
 }
