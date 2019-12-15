@@ -13,11 +13,15 @@
 		5AA5BEEA23A4F8A000D47EBD /* SignUpLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */; };
 		5AA5BEEC23A502A800D47EBD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEEB23A502A800D47EBD /* Extensions.swift */; };
 		5AA5BEEE23A5034400D47EBD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEED23A5034400D47EBD /* Colors.swift */; };
+		5AA5BEF023A53DAD00D47EBD /* UserRegisterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEEF23A53DAD00D47EBD /* UserRegisterationController.swift */; };
 		5AAC56FF2393963600A2D0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC56FE2393963600A2D0D2 /* AppDelegate.swift */; };
 		5AAC57012393963600A2D0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAC57002393963600A2D0D2 /* SceneDelegate.swift */; };
 		5AAC57062393963600A2D0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC57042393963600A2D0D2 /* Main.storyboard */; };
 		5AAC57082393963700A2D0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC57072393963700A2D0D2 /* Assets.xcassets */; };
 		5AAC570B2393963700A2D0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC57092393963700A2D0D2 /* LaunchScreen.storyboard */; };
+		5AFB5CE123A605ED00161B03 /* UserLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB5CE023A605ED00161B03 /* UserLoginController.swift */; };
+		5AFB5CE323A609AE00161B03 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB5CE223A609AE00161B03 /* ForgotPasswordController.swift */; };
+		5AFB5CE523A6121400161B03 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB5CE423A6121400161B03 /* PrivacyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,7 @@
 		5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLoginController.swift; sourceTree = "<group>"; };
 		5AA5BEEB23A502A800D47EBD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5AA5BEED23A5034400D47EBD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5AA5BEEF23A53DAD00D47EBD /* UserRegisterationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterationController.swift; sourceTree = "<group>"; };
 		5AAC56FB2393963600A2D0D2 /* Roy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAC56FE2393963600A2D0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AAC57002393963600A2D0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		5AAC57072393963700A2D0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AAC570A2393963700A2D0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AAC570C2393963700A2D0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AFB5CE023A605ED00161B03 /* UserLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginController.swift; sourceTree = "<group>"; };
+		5AFB5CE223A609AE00161B03 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		5AFB5CE423A6121400161B03 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,10 @@
 				5AAC57002393963600A2D0D2 /* SceneDelegate.swift */,
 				5A6D091B2393A7920042E535 /* WelcomePage.swift */,
 				5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */,
+				5AA5BEEF23A53DAD00D47EBD /* UserRegisterationController.swift */,
+				5AFB5CE023A605ED00161B03 /* UserLoginController.swift */,
+				5AFB5CE223A609AE00161B03 /* ForgotPasswordController.swift */,
+				5AFB5CE423A6121400161B03 /* PrivacyController.swift */,
 				5AA5BEEB23A502A800D47EBD /* Extensions.swift */,
 				5AA5BEED23A5034400D47EBD /* Colors.swift */,
 				5AAC57042393963600A2D0D2 /* Main.storyboard */,
@@ -163,10 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AA5BEEA23A4F8A000D47EBD /* SignUpLoginController.swift in Sources */,
+				5AFB5CE523A6121400161B03 /* PrivacyController.swift in Sources */,
 				5AA5BEEC23A502A800D47EBD /* Extensions.swift in Sources */,
 				5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */,
 				5AA5BEEE23A5034400D47EBD /* Colors.swift in Sources */,
 				5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */,
+				5AFB5CE323A609AE00161B03 /* ForgotPasswordController.swift in Sources */,
+				5AA5BEF023A53DAD00D47EBD /* UserRegisterationController.swift in Sources */,
+				5AFB5CE123A605ED00161B03 /* UserLoginController.swift in Sources */,
 				5AAC56FF2393963600A2D0D2 /* AppDelegate.swift in Sources */,
 				5AAC57012393963600A2D0D2 /* SceneDelegate.swift in Sources */,
 			);
