@@ -191,7 +191,8 @@ class UserRegisterationController: UIViewController {
     }
     
     @objc private func onButtonTapped(sender: UIButton) {
-        print("onRegisterTapped!")
+        let viewController = HomeViewController()
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     @objc private func onLoginTapped(sender: UIButton) {
