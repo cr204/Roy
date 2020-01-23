@@ -13,4 +13,5 @@ struct Colors {
     static let btnBgColor = UIColor(red: 0.42, green: 0.3, blue: 0.18, alpha: 1)
     static let appBlack = UIColor(red: 0.12, green: 0.12, blue: 0.12, alpha: 1)
     static let tfBG = UIColor(red: 0.78, green: 0.76, blue: 0.67, alpha: 1)
+    static let brown = UIColor(red: 0.34, green: 0.24, blue: 0.13, alpha: 1)
 }
