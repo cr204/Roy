@@ -223,9 +223,9 @@ class HomeViewController: UIViewController {
         case 0:
             viewController = CategoryListController()
         case 1:
-            viewController = BaseController()
+            viewController = HelpViewController()
         case 2:
-            viewController = BaseController()
+            viewController = CategoryListController()
         default:
             return
         }

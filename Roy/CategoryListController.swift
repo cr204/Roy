@@ -86,6 +86,11 @@ class CategoryListController: BaseController, UICollectionViewDataSource, UIColl
         return 10
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var viewController = AskQuestionController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 }
 
 
