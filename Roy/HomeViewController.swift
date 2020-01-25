@@ -217,20 +217,25 @@ class HomeViewController: UIViewController {
     @objc private func onButtonTapped(sender: UIButton) {
         print("onButtonTapped: \(sender.tag)")
         
-        var viewController = UIViewController()
+        //var viewController = UIViewController()
         
         switch sender.tag {
         case 0:
-            viewController = CategoryListController()
+            let viewController = CategoryListController()
+            viewController.listCategory = .question
+            navigationController?.pushViewController(viewController, animated: true)
         case 1:
-            viewController = HelpViewController()
+            let viewController = HelpViewController()
+            navigationController?.pushViewController(viewController, animated: true)
         case 2:
-            viewController = CategoryListController()
+            let viewController = CategoryListController()
+            viewController.listCategory = .history
+            navigationController?.pushViewController(viewController, animated: true)
         default:
             return
         }
         
-        navigationController?.pushViewController(viewController, animated: true)
+        // navigationController?.pushViewController(viewController, animated: true)
     }
     
     @objc private func onUrgentHelpTapped(sender: UIButton) {

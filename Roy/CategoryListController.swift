@@ -8,7 +8,14 @@
 
 import UIKit
 
+enum ListType {
+    case question
+    case history
+}
+
 class CategoryListController: BaseController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    var listCategory: ListType!
     
     let category = [(image: "categeory0", text: "Relationships"),
                     (image: "categeory1", text: "Health"),
@@ -35,7 +42,7 @@ class CategoryListController: BaseController, UICollectionViewDataSource, UIColl
         cv.translatesAutoresizingMaskIntoConstraints = false
         return cv
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -87,8 +94,15 @@ class CategoryListController: BaseController, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var viewController = AskQuestionController()
-        navigationController?.pushViewController(viewController, animated: true)
+        if let type = self.listCategory {
+            switch type {
+            case .question:
+                navigationController?.pushViewController(AskQuestionController(), animated: true)
+            case .history:
+                navigationController?.pushViewController(HistoryQeustionsController(), animated: true)
+            }
+            
+        }
     }
     
 }

@@ -12,6 +12,7 @@
 		5A56171423D9B16B00A3DE26 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171323D9B16B00A3DE26 /* HelpViewController.swift */; };
 		5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171523D9B34800A3DE26 /* PostAnswerController.swift */; };
 		5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D091B2393A7920042E535 /* WelcomePage.swift */; };
+		5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */; };
 		5AA5BEE623A4EDCB00D47EBD /* onboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE523A4EDCB00D47EBD /* onboard.xib */; };
 		5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE723A4EDD500D47EBD /* OnboardView.swift */; };
 		5AA5BEEA23A4F8A000D47EBD /* SignUpLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */; };
@@ -23,6 +24,7 @@
 		5AAC57062393963600A2D0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC57042393963600A2D0D2 /* Main.storyboard */; };
 		5AAC57082393963700A2D0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC57072393963700A2D0D2 /* Assets.xcassets */; };
 		5AAC570B2393963700A2D0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAC57092393963700A2D0D2 /* LaunchScreen.storyboard */; };
+		5AB7470A23DAFD1800E0F7C5 /* HistoryQeustionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB7470923DAFD1800E0F7C5 /* HistoryQeustionsController.swift */; };
 		5AFB5CE123A605ED00161B03 /* UserLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB5CE023A605ED00161B03 /* UserLoginController.swift */; };
 		5AFB5CE323A609AE00161B03 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB5CE223A609AE00161B03 /* ForgotPasswordController.swift */; };
 		5AFB5CE523A6121400161B03 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB5CE423A6121400161B03 /* PrivacyController.swift */; };
@@ -36,6 +38,7 @@
 		5A56171323D9B16B00A3DE26 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		5A56171523D9B34800A3DE26 /* PostAnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAnswerController.swift; sourceTree = "<group>"; };
 		5A6D091B2393A7920042E535 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThumbs.swift; sourceTree = "<group>"; };
 		5AA5BEE523A4EDCB00D47EBD /* onboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = onboard.xib; sourceTree = "<group>"; };
 		5AA5BEE723A4EDD500D47EBD /* OnboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLoginController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		5AAC57072393963700A2D0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AAC570A2393963700A2D0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AAC570C2393963700A2D0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB7470923DAFD1800E0F7C5 /* HistoryQeustionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryQeustionsController.swift; sourceTree = "<group>"; };
 		5AFB5CE023A605ED00161B03 /* UserLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginController.swift; sourceTree = "<group>"; };
 		5AFB5CE223A609AE00161B03 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		5AFB5CE423A6121400161B03 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AA0B6C223DBCC800008855B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5AAC56F22393963600A2D0D2 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,8 @@
 				5A56171123D97DA900A3DE26 /* AskQuestionController.swift */,
 				5A56171523D9B34800A3DE26 /* PostAnswerController.swift */,
 				5A56171323D9B16B00A3DE26 /* HelpViewController.swift */,
+				5AB7470923DAFD1800E0F7C5 /* HistoryQeustionsController.swift */,
+				5AA0B6C223DBCC800008855B /* Views */,
 				5AA5BEEB23A502A800D47EBD /* Extensions.swift */,
 				5AA5BEED23A5034400D47EBD /* Colors.swift */,
 				5AAC57042393963600A2D0D2 /* Main.storyboard */,
@@ -202,8 +216,10 @@
 				5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */,
 				5AA5BEEE23A5034400D47EBD /* Colors.swift in Sources */,
 				5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */,
+				5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */,
 				5AFB5CE323A609AE00161B03 /* ForgotPasswordController.swift in Sources */,
 				5AA5BEF023A53DAD00D47EBD /* UserRegisterationController.swift in Sources */,
+				5AB7470A23DAFD1800E0F7C5 /* HistoryQeustionsController.swift in Sources */,
 				5A56171423D9B16B00A3DE26 /* HelpViewController.swift in Sources */,
 				5AFB5CE123A605ED00161B03 /* UserLoginController.swift in Sources */,
 				5AAC56FF2393963600A2D0D2 /* AppDelegate.swift in Sources */,
