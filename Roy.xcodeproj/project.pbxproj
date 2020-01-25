@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5A1B956823BCD91B0080845D /* CategoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B956723BCD91B0080845D /* CategoryListController.swift */; };
+		5A30A5AF23DC0C3E002B4FC8 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30A5AE23DC0C3E002B4FC8 /* AnswerCell.swift */; };
 		5A56171223D97DA900A3DE26 /* AskQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171123D97DA900A3DE26 /* AskQuestionController.swift */; };
 		5A56171423D9B16B00A3DE26 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171323D9B16B00A3DE26 /* HelpViewController.swift */; };
 		5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171523D9B34800A3DE26 /* PostAnswerController.swift */; };
 		5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D091B2393A7920042E535 /* WelcomePage.swift */; };
 		5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */; };
+		5AA0B6C423DBEBF60008855B /* QuestionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */; };
+		5AA0B6C623DBF5050008855B /* QDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C523DBF5050008855B /* QDHeaderView.swift */; };
+		5AA0B6C823DBF5A00008855B /* QuestionTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C723DBF5A00008855B /* QuestionTVCell.swift */; };
+		5AA0B6CA23DBFE050008855B /* HistoryQuestionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C923DBFE050008855B /* HistoryQuestionsCell.swift */; };
 		5AA5BEE623A4EDCB00D47EBD /* onboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE523A4EDCB00D47EBD /* onboard.xib */; };
 		5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE723A4EDD500D47EBD /* OnboardView.swift */; };
 		5AA5BEEA23A4F8A000D47EBD /* SignUpLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */; };
@@ -34,11 +39,16 @@
 
 /* Begin PBXFileReference section */
 		5A1B956723BCD91B0080845D /* CategoryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListController.swift; sourceTree = "<group>"; };
+		5A30A5AE23DC0C3E002B4FC8 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		5A56171123D97DA900A3DE26 /* AskQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionController.swift; sourceTree = "<group>"; };
 		5A56171323D9B16B00A3DE26 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		5A56171523D9B34800A3DE26 /* PostAnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAnswerController.swift; sourceTree = "<group>"; };
 		5A6D091B2393A7920042E535 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThumbs.swift; sourceTree = "<group>"; };
+		5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsController.swift; sourceTree = "<group>"; };
+		5AA0B6C523DBF5050008855B /* QDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QDHeaderView.swift; sourceTree = "<group>"; };
+		5AA0B6C723DBF5A00008855B /* QuestionTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTVCell.swift; sourceTree = "<group>"; };
+		5AA0B6C923DBFE050008855B /* HistoryQuestionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryQuestionsCell.swift; sourceTree = "<group>"; };
 		5AA5BEE523A4EDCB00D47EBD /* onboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = onboard.xib; sourceTree = "<group>"; };
 		5AA5BEE723A4EDD500D47EBD /* OnboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		5AA5BEE923A4F8A000D47EBD /* SignUpLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLoginController.swift; sourceTree = "<group>"; };
@@ -75,6 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */,
+				5AA0B6C523DBF5050008855B /* QDHeaderView.swift */,
+				5AA0B6C723DBF5A00008855B /* QuestionTVCell.swift */,
+				5A30A5AE23DC0C3E002B4FC8 /* AnswerCell.swift */,
+				5AA0B6C923DBFE050008855B /* HistoryQuestionsCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 				5A56171523D9B34800A3DE26 /* PostAnswerController.swift */,
 				5A56171323D9B16B00A3DE26 /* HelpViewController.swift */,
 				5AB7470923DAFD1800E0F7C5 /* HistoryQeustionsController.swift */,
+				5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */,
 				5AA0B6C223DBCC800008855B /* Views */,
 				5AA5BEEB23A502A800D47EBD /* Extensions.swift */,
 				5AA5BEED23A5034400D47EBD /* Colors.swift */,
@@ -209,12 +224,16 @@
 				5AA5BEEA23A4F8A000D47EBD /* SignUpLoginController.swift in Sources */,
 				5A56171223D97DA900A3DE26 /* AskQuestionController.swift in Sources */,
 				5A1B956823BCD91B0080845D /* CategoryListController.swift in Sources */,
+				5A30A5AF23DC0C3E002B4FC8 /* AnswerCell.swift in Sources */,
 				5AFB5CE523A6121400161B03 /* PrivacyController.swift in Sources */,
 				5AA5BEEC23A502A800D47EBD /* Extensions.swift in Sources */,
 				5AFB5CE923A664B900161B03 /* BaseController.swift in Sources */,
 				5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */,
+				5AA0B6C623DBF5050008855B /* QDHeaderView.swift in Sources */,
 				5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */,
+				5AA0B6C423DBEBF60008855B /* QuestionDetailsController.swift in Sources */,
 				5AA5BEEE23A5034400D47EBD /* Colors.swift in Sources */,
+				5AA0B6CA23DBFE050008855B /* HistoryQuestionsCell.swift in Sources */,
 				5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */,
 				5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */,
 				5AFB5CE323A609AE00161B03 /* ForgotPasswordController.swift in Sources */,
@@ -223,6 +242,7 @@
 				5A56171423D9B16B00A3DE26 /* HelpViewController.swift in Sources */,
 				5AFB5CE123A605ED00161B03 /* UserLoginController.swift in Sources */,
 				5AAC56FF2393963600A2D0D2 /* AppDelegate.swift in Sources */,
+				5AA0B6C823DBF5A00008855B /* QuestionTVCell.swift in Sources */,
 				5AAC57012393963600A2D0D2 /* SceneDelegate.swift in Sources */,
 				5AFB5CE723A61A0500161B03 /* HomeViewController.swift in Sources */,
 			);

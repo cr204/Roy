@@ -55,8 +55,6 @@ class BaseController: UIViewController {
 
     func initViews() {
         
-        print("Base initViews()")
-        
         view.addSubview(btnBack)
         NSLayoutConstraint(item: btnBack, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 25 + topSafeArea).isActive = true
         NSLayoutConstraint(item: btnBack, attribute: .left, relatedBy: .equal, toItem: self.view, attribute: .left, multiplier: 1, constant: 12).isActive = true

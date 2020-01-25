@@ -15,6 +15,11 @@ class ButtonThumbs: UIView {
         case down
     }
     
+    enum ButtonColor {
+        case gray
+        case brown
+    }
+    
     let iconImage: UIImageView = {
         let imgView = UIImageView()
         imgView.contentMode = .scaleAspectFit
@@ -47,14 +52,16 @@ class ButtonThumbs: UIView {
         super.init(coder: coder)
     }
     
-    func set(type: ButtonThumbs.ButtonType) {
+    func set(type: ButtonType, color: ButtonColor) {
         switch type {
         case .up:
-            iconImage.image = UIImage(named: "hands_up")
+            iconImage.image = UIImage(named: color == ButtonColor.gray ? "thumbs_up" : "thumbs_up_brown")
         case .down:
-            iconImage.image = UIImage(named: "hands_down")
+            iconImage.image = UIImage(named: color == ButtonColor.gray ? "thumbs_down" : "thumbs_down_brown")
         }
     }
+    
+    
     
     private func initViews() {
         

@@ -133,8 +133,8 @@ class AskQuestionController: BaseController, UITextViewDelegate {
     @objc private func onButtonTapped(sender: UIButton) {
         print("onButtonTapped()")
         
-        var viewController = PostAnswerController()
-        navigationController?.pushViewController(viewController, animated: true)
+//        let viewController = PostAnswerController()
+//        navigationController?.pushViewController(viewController, animated: true)
     }
 
 }
