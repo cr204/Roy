@@ -66,6 +66,8 @@ class QuestionTVCell: UITableViewCell {
 
     func setupViews() {
         
+        self.selectionStyle = .none
+        
         self.backgroundColor = UIColor.clear
         
         self.addSubview(title)

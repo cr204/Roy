@@ -13,6 +13,7 @@
 		5A56171423D9B16B00A3DE26 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171323D9B16B00A3DE26 /* HelpViewController.swift */; };
 		5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171523D9B34800A3DE26 /* PostAnswerController.swift */; };
 		5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D091B2393A7920042E535 /* WelcomePage.swift */; };
+		5A80D86C23DC80A200809605 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80D86B23DC80A200809605 /* UserProfileController.swift */; };
 		5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */; };
 		5AA0B6C423DBEBF60008855B /* QuestionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */; };
 		5AA0B6C623DBF5050008855B /* QDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C523DBF5050008855B /* QDHeaderView.swift */; };
@@ -44,6 +45,7 @@
 		5A56171323D9B16B00A3DE26 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		5A56171523D9B34800A3DE26 /* PostAnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAnswerController.swift; sourceTree = "<group>"; };
 		5A6D091B2393A7920042E535 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
+		5A80D86B23DC80A200809605 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThumbs.swift; sourceTree = "<group>"; };
 		5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsController.swift; sourceTree = "<group>"; };
 		5AA0B6C523DBF5050008855B /* QDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QDHeaderView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				5A56171323D9B16B00A3DE26 /* HelpViewController.swift */,
 				5AB7470923DAFD1800E0F7C5 /* HistoryQeustionsController.swift */,
 				5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */,
+				5A80D86B23DC80A200809605 /* UserProfileController.swift */,
 				5AA0B6C223DBCC800008855B /* Views */,
 				5AA5BEEB23A502A800D47EBD /* Extensions.swift */,
 				5AA5BEED23A5034400D47EBD /* Colors.swift */,
@@ -229,6 +232,7 @@
 				5AA5BEEC23A502A800D47EBD /* Extensions.swift in Sources */,
 				5AFB5CE923A664B900161B03 /* BaseController.swift in Sources */,
 				5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */,
+				5A80D86C23DC80A200809605 /* UserProfileController.swift in Sources */,
 				5AA0B6C623DBF5050008855B /* QDHeaderView.swift in Sources */,
 				5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */,
 				5AA0B6C423DBEBF60008855B /* QuestionDetailsController.swift in Sources */,
