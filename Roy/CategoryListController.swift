@@ -15,19 +15,20 @@ enum ListType {
 
 class CategoryListController: BaseController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    var categories: [CategoryItem] = []
     var listCategory: ListType!
     
-    let category = [(image: "categeory0", text: "Relationships"),
-                    (image: "categeory1", text: "Health"),
-                    (image: "categeory2", text: "Education"),
-                    (image: "categeory3", text: "Bullying"),
-                    (image: "categeory4", text: "Sex"),
-                    (image: "categeory5", text: "Addiction"),
-                    (image: "categeory6", text: "Family"),
-                    (image: "categeory7", text: "Suicidal Thoughts"),
-                    (image: "categeory8", text: "Money"),
-                    (image: "categeory9", text: "Grief"),
-                    (image: "categeory10", text: "Other")
+    let category = [(image: "categeory1", text: "Relationships"),
+                    (image: "categeory2", text: "Health"),
+                    (image: "categeory3", text: "Education"),
+                    (image: "categeory4", text: "Bullying"),
+                    (image: "categeory5", text: "Sex"),
+                    (image: "categeory6", text: "Addiction"),
+                    (image: "categeory7", text: "Family"),
+                    (image: "categeory8", text: "Suicidal Thoughts"),
+                    (image: "categeory9", text: "Money"),
+                    (image: "categeory10", text: "Grief"),
+                    (image: "categeory11", text: "Other")
                     ]
     
     let collectionView: UICollectionView = {
@@ -50,13 +51,11 @@ class CategoryListController: BaseController, UICollectionViewDataSource, UIColl
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        self.setupViews()
+        self.fetchCategoryList()
     }
     
 
-    private func setupViews() {
-        print("setupViews()")
-        
+    func setupViews() {
         view.addSubview(collectionView)
         collectionView.isHidden = false
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 15, right: 0)
@@ -77,8 +76,9 @@ class CategoryListController: BaseController, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategorItemCVCell", for: indexPath) as! CategorItemCVCell
-        cell.image.image = UIImage(named: category[indexPath.row].image)
-        cell.label.text = category[indexPath.row].text
+        let cData = categories[indexPath.row]
+        cell.image.image = UIImage(named: "categeory\(cData.category_id)")
+        cell.label.text = cData.category_name
         cell.initViews()
         return cell
     }
@@ -95,11 +95,16 @@ class CategoryListController: BaseController, UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let type = self.listCategory {
+            
             switch type {
             case .question:
-                navigationController?.pushViewController(AskQuestionController(), animated: true)
+                let destination = AskQuestionController()
+                destination.categoryId = categories[indexPath.row].category_id
+                navigationController?.pushViewController(destination, animated: true)
             case .history:
-                navigationController?.pushViewController(HistoryQeustionsController(), animated: true)
+                let destination = HistoryQeustionsController()
+                destination.categoryId = categories[indexPath.row].category_id
+                navigationController?.pushViewController(destination, animated: true)
             }
             
         }

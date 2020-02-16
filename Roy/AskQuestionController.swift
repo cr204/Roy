@@ -10,6 +10,8 @@ import UIKit
 
 class AskQuestionController: BaseController, UITextViewDelegate {
     
+    var categoryId: Int = 0
+    
     let labelPost: UILabel = {
         let label = UILabel()
         label.text = "POST"
@@ -19,7 +21,7 @@ class AskQuestionController: BaseController, UITextViewDelegate {
         return label
     }()
     
-    let nameTF: UITextField = {
+    let titleTF: UITextField = {
         let tf = UITextField()
         tf.placeholder = "Enter Question"
         tf.setLeftPaddingPoints(10)
@@ -86,13 +88,13 @@ class AskQuestionController: BaseController, UITextViewDelegate {
         NSLayoutConstraint(item: labelPost, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 100).isActive = true
         NSLayoutConstraint(item: labelPost, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 15).isActive = true
         
-        view.addSubview(nameTF)
-        nameTF.heightAnchor.constraint(equalToConstant: 42).isActive = true
-        view.addConstraintsWithFormat(format: "H:|-15-[v0]-15-|", views: nameTF)
-        NSLayoutConstraint(item: nameTF, attribute: .top, relatedBy: .equal, toItem: labelPost, attribute: .bottom, multiplier: 1, constant: 20).isActive = true
+        view.addSubview(titleTF)
+        titleTF.heightAnchor.constraint(equalToConstant: 42).isActive = true
+        view.addConstraintsWithFormat(format: "H:|-15-[v0]-15-|", views: titleTF)
+        NSLayoutConstraint(item: titleTF, attribute: .top, relatedBy: .equal, toItem: labelPost, attribute: .bottom, multiplier: 1, constant: 20).isActive = true
         
         view.addSubview(labelCategory)
-        NSLayoutConstraint(item: labelCategory, attribute: .top, relatedBy: .equal, toItem: nameTF, attribute: .bottom, multiplier: 1, constant: 17).isActive = true
+        NSLayoutConstraint(item: labelCategory, attribute: .top, relatedBy: .equal, toItem: titleTF, attribute: .bottom, multiplier: 1, constant: 17).isActive = true
         NSLayoutConstraint(item: labelCategory, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 15).isActive = true
         
         view.addSubview(labelCategoryName)
@@ -133,8 +135,25 @@ class AskQuestionController: BaseController, UITextViewDelegate {
     @objc private func onButtonTapped(sender: UIButton) {
         print("onButtonTapped()")
         
-//        let viewController = PostAnswerController()
-//        navigationController?.pushViewController(viewController, animated: true)
+        if let title = titleTF.text, let question = detailsTF.text {
+            self.postQuestion(title: title, question: question, categoryId: self.categoryId)
+        }
+        
+    }
+    
+    override func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) {
+            (result : UIAlertAction) -> Void in
+            
+            self.navigationController?.popViewController(animated: true)
+        }
+        alertController.addAction(okAction)
+        
+        DispatchQueue.main.async {
+            self.navigationController?.present(alertController, animated: true, completion: nil)
+        }
     }
 
 }

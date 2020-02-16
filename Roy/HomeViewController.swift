@@ -10,6 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik9VRXhRVFF4UWtNNU5qa3hOVVZGTmtJM1F6Z3hSRUk1UWpjMFFUWkVSVUZDUlRsR05USTNNZyJ9.eyJpc3MiOiJodHRwczovL3JveWFwaS5hdXRoMC5jb20vIiwic3ViIjoiZm1QcEVFb0FNSkdyaUpZSDVoVllyNXBLdmVjZ3JRWXNAY2xpZW50cyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Qvcm95YXBpIiwiaWF0IjoxNTcwNTQxMjAwLCJleHAiOjE1NzA2Mjc2MDAsImF6cCI6ImZtUHBFRW9BTUpHcmlKWUg1aFZZcjVwS3ZlY2dyUVlzIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.IBAmWtQ3GG6P8QvOjS3BTuo3Hw0L9Y9enIJ46WuHTGn1oIt25nnjNkn1bCTTFxNicT8HVPuNUVKBawOeCKYJ8vN5P9wfZSKmEzL5DXhFG9VZ5f5FEQCOM_M-pS4WkCstTPC_8unAvRSjrwoi3w3NrKY8u-kz6hmSrMjXPbDvo1w8T__-zGgNnbg415SqdSTC-PRMvUgJJ9mO7s4q8bb6Myi0XjU6BG0zs9eqQ0rWsMfHZeSewXTBhQQBEmu601BJ3zCMr1Li8_aBfqXMyWpnMBrDoOF4H3K4gYPKxC1z3QPz415FydtK-mIwVR4SKXlQiPqvBlsTUupreJPTGN6zkg"
+    let u_id = "EgJ78mEpgKPP0clRderUqLgmXR33"
+    
     var topSafeArea: CGFloat = 0
     var bottomSafeArea: CGFloat = 0
     
@@ -122,6 +125,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Globals.token = self.token
+        Globals.u_id = self.u_id
 
         view.backgroundColor = Colors.bgColor
         self.initViews()

@@ -10,6 +10,9 @@ import UIKit
 
 class HistoryQeustionsController: BaseController, UITableViewDelegate, UITableViewDataSource {
     
+    var categoryId: Int = 0
+    var questions: [QuestionItem] = []
+    
     let labelTitle: UILabel = {
         let label = UILabel()
         label.text = "CATEGORY TITLE"
@@ -34,11 +37,11 @@ class HistoryQeustionsController: BaseController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         tableView.delegate = self
         
-        // Do any additional setup after loading the view.
-        self.setupViews()
+        self.fetchQuestionList(categoryId: self.categoryId)
+        //self.setupViews()
     }
     
-    private func setupViews() {
+    func setupViews() {
         
         view.addSubview(labelTitle)
         NSLayoutConstraint(item: labelTitle, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 100).isActive = true
@@ -55,12 +58,16 @@ class HistoryQeustionsController: BaseController, UITableViewDelegate, UITableVi
     // MARK: TableView
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return  questions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryQuestionsCell", for: indexPath) as! HistoryQuestionsCell
         cell.selectionStyle = .none
+        cell.labelQuestion.text = questions[indexPath.row].q_title
+        cell.labelDate.text = convertToDate(date: questions[indexPath.row].createdAt)
+        cell.btnUp.labelCount.text = String(questions[indexPath.row].upvotes)
+        cell.btnDown.labelCount.text = String(questions[indexPath.row].downvotes)
         cell.setupViews()
         return cell
     }
@@ -72,6 +79,14 @@ class HistoryQeustionsController: BaseController, UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = QuestionDetailsController()
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
+    // MARK: Other methods
+    
+    private func convertToDate(date: Int64) -> String {
+        let dateString = String(date)
+        return dateString
     }
 
 }

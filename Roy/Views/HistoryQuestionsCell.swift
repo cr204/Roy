@@ -46,6 +46,7 @@ class HistoryQuestionsCell: UITableViewCell {
     
     let btnUp: ButtonThumbs = {
         let btn = ButtonThumbs()
+        btn.tag = 0
         btn.set(type: .up, color: .gray)
         btn.labelCount.text = "5"
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -54,6 +55,7 @@ class HistoryQuestionsCell: UITableViewCell {
     
     let btnDown: ButtonThumbs = {
         let btn = ButtonThumbs()
+        btn.tag = 1
         btn.set(type: .down, color: .gray)
         btn.labelCount.text = "0"
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -92,7 +94,6 @@ class HistoryQuestionsCell: UITableViewCell {
         btnDown.heightAnchor.constraint(equalToConstant: 30).isActive = true
         NSLayoutConstraint(item: btnDown, attribute: .right, relatedBy: .equal, toItem: separator, attribute: .right, multiplier: 1, constant: -3).isActive = true
         NSLayoutConstraint(item: btnDown, attribute: .top, relatedBy: .equal, toItem: separator, attribute: .bottom, multiplier: 1, constant: 3).isActive = true
-        
         
     }
     

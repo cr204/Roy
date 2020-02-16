@@ -14,6 +14,11 @@
 		5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A56171523D9B34800A3DE26 /* PostAnswerController.swift */; };
 		5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6D091B2393A7920042E535 /* WelcomePage.swift */; };
 		5A80D86C23DC80A200809605 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80D86B23DC80A200809605 /* UserProfileController.swift */; };
+		5A81BD7623F905CA00211552 /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81BD7523F905CA00211552 /* Structures.swift */; };
+		5A81BD7A23F9187200211552 /* NetworkExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81BD7923F9187200211552 /* NetworkExtensions.swift */; };
+		5A81BD7C23F9191900211552 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81BD7B23F9191900211552 /* Links.swift */; };
+		5A81BD7F23F91ABF00211552 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81BD7E23F91ABF00211552 /* JSONParser.swift */; };
+		5A81BD8123F91BD900211552 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A81BD8023F91BD900211552 /* Globals.swift */; };
 		5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */; };
 		5AA0B6C423DBEBF60008855B /* QuestionDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */; };
 		5AA0B6C623DBF5050008855B /* QDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA0B6C523DBF5050008855B /* QDHeaderView.swift */; };
@@ -46,6 +51,11 @@
 		5A56171523D9B34800A3DE26 /* PostAnswerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAnswerController.swift; sourceTree = "<group>"; };
 		5A6D091B2393A7920042E535 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		5A80D86B23DC80A200809605 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		5A81BD7523F905CA00211552 /* Structures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
+		5A81BD7923F9187200211552 /* NetworkExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExtensions.swift; sourceTree = "<group>"; };
+		5A81BD7B23F9191900211552 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		5A81BD7E23F91ABF00211552 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		5A81BD8023F91BD900211552 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		5AA0B6C023DBCC6D0008855B /* ButtonThumbs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonThumbs.swift; sourceTree = "<group>"; };
 		5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsController.swift; sourceTree = "<group>"; };
 		5AA0B6C523DBF5050008855B /* QDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QDHeaderView.swift; sourceTree = "<group>"; };
@@ -83,6 +93,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A81BD7723F9097700211552 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A81BD7523F905CA00211552 /* Structures.swift */,
+				5A81BD8023F91BD900211552 /* Globals.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A81BD7823F9184B00211552 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5BEEB23A502A800D47EBD /* Extensions.swift */,
+				5AA5BEED23A5034400D47EBD /* Colors.swift */,
+				5A81BD7B23F9191900211552 /* Links.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A81BD7D23F91AA000211552 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5A81BD7923F9187200211552 /* NetworkExtensions.swift */,
+				5A81BD7E23F91ABF00211552 /* JSONParser.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		5AA0B6C223DBCC800008855B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +169,10 @@
 				5AB7470923DAFD1800E0F7C5 /* HistoryQeustionsController.swift */,
 				5AA0B6C323DBEBF60008855B /* QuestionDetailsController.swift */,
 				5A80D86B23DC80A200809605 /* UserProfileController.swift */,
+				5A81BD7D23F91AA000211552 /* Controller */,
+				5A81BD7723F9097700211552 /* Model */,
 				5AA0B6C223DBCC800008855B /* Views */,
-				5AA5BEEB23A502A800D47EBD /* Extensions.swift */,
-				5AA5BEED23A5034400D47EBD /* Colors.swift */,
+				5A81BD7823F9184B00211552 /* Utils */,
 				5AAC57042393963600A2D0D2 /* Main.storyboard */,
 				5AD8A044239E94BD00CC7CE2 /* OnBoards */,
 				5AAC57072393963700A2D0D2 /* Assets.xcassets */,
@@ -232,13 +271,18 @@
 				5AA5BEEC23A502A800D47EBD /* Extensions.swift in Sources */,
 				5AFB5CE923A664B900161B03 /* BaseController.swift in Sources */,
 				5A56171623D9B34800A3DE26 /* PostAnswerController.swift in Sources */,
+				5A81BD8123F91BD900211552 /* Globals.swift in Sources */,
 				5A80D86C23DC80A200809605 /* UserProfileController.swift in Sources */,
+				5A81BD7F23F91ABF00211552 /* JSONParser.swift in Sources */,
 				5AA0B6C623DBF5050008855B /* QDHeaderView.swift in Sources */,
 				5AA5BEE823A4EDD500D47EBD /* OnboardView.swift in Sources */,
+				5A81BD7C23F9191900211552 /* Links.swift in Sources */,
 				5AA0B6C423DBEBF60008855B /* QuestionDetailsController.swift in Sources */,
+				5A81BD7A23F9187200211552 /* NetworkExtensions.swift in Sources */,
 				5AA5BEEE23A5034400D47EBD /* Colors.swift in Sources */,
 				5AA0B6CA23DBFE050008855B /* HistoryQuestionsCell.swift in Sources */,
 				5A6D091C2393A7920042E535 /* WelcomePage.swift in Sources */,
+				5A81BD7623F905CA00211552 /* Structures.swift in Sources */,
 				5AA0B6C123DBCC6D0008855B /* ButtonThumbs.swift in Sources */,
 				5AFB5CE323A609AE00161B03 /* ForgotPasswordController.swift in Sources */,
 				5AA5BEF023A53DAD00D47EBD /* UserRegisterationController.swift in Sources */,

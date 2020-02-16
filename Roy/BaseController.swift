@@ -82,7 +82,21 @@ class BaseController: UIViewController {
     }
 
     @objc private func onBackTapped(sender: UIButton) {
-         _=navigationController?.popViewController(animated: true)
+         navigationController?.popViewController(animated: true)
     }
 
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) {
+            (result : UIAlertAction) -> Void in
+            
+        }
+        alertController.addAction(okAction)
+        
+        DispatchQueue.main.async {
+            self.navigationController?.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
 }
